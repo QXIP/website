@@ -1,0 +1,315 @@
+/*
+Custom CSS for  561 QXIP BV
+*/
+
+html {
+    overflow: scroll;
+  }
+  ::-webkit-scrollbar {
+      width: 0px;
+  }
+.banner-background{
+    background:#00000070; 
+    padding:20px;
+    border-radius:3px;
+}
+
+/*define the animation types */
+
+/*  anim-cover : cover page transition */
+.cover {
+    width: 100%;
+    height:100px;
+  
+}
+.training {
+    width: 100%;
+    height:100px;
+  
+}
+.openS {
+    width:auto;
+}
+.os-text{
+    widht:auto;
+}
+.showUp {
+    width:auto;
+}
+/*  anim-div-xl*/
+.anim-div-xl {}
+/* anim-div-m*/
+.anim-div-m {}
+/* anim-div-s */
+.anim-div-s {}
+/*define transition type*/
+
+/* anim-ltr : left to right */
+.anim-ltr {}
+/* anim-rtl : right to left */
+.anim-rtl {}
+/* anim-fadein : fade in */
+.anim-fadein {}
+
+/* anim fadeout*/
+.anim-fadeout {}
+
+/** wipe enter*/
+@keyframes wipe-enter {
+	0% {
+        opacity: 0;
+	}
+	50% {
+        opacity: .45;
+       
+	}
+    70% {
+       opacity:1
+    }
+
+}
+
+@keyframes show-up {
+    0% {
+        opacity: 0;
+        transform: translateY(25px)
+    }
+    100% {
+        opacity:1;
+        transform: translateX(0px);
+    }
+}
+@keyframes rocket-launch {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+        transform: translateY(100px);
+    }
+    70% {
+        opacity: 1;
+        transform: translateX(0px);
+        transform: translateY(0px);
+    
+    }
+}
+
+@keyframes wipe-enter-training {
+	0% {
+        opacity: 0;
+	}
+	50% {
+        opacity: .45;
+       
+	}
+    70% {
+       opacity:1
+    }
+ 
+}
+
+@keyframes openSAppear {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+	}
+	50% {
+        opacity: .45;
+        transform: translateX(0px);
+       
+	}
+    70% {
+       opacity:1
+    }
+}
+
+@media(prefers-reduced-motion: no-preference) {
+    .anim-cover {
+        animation-name: wipe-enter;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
+}
+
+@media(prefers-reduced-motion: no-preference) {
+    .anim-training {
+        animation-name: wipe-enter-training;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+}
+
+@media(prefers-reduced-motion: no-preference) {
+    .anim-os-text {
+        animation-name: wipe-enter-training;
+        animation-duration: .75s;
+        animation-iteration-count: 1;
+    }
+}
+
+@media(prefers-reduced-motion: no-preference) {
+    .anim-openS {
+        animation-name: openSAppear;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+}
+
+@media(prefers-reduced-motion: no-preference) {
+    .anim-rocket {
+        animation-name: rocket-launch;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+}
+
+@media(prefers-reduced-motion: no-preference) {
+    .anim-up {
+        animation-name: show-up;
+        animation-duration: 1.75 s;
+        animation-iteration-count: 1;
+    }
+}
+
+video.cover {
+    object-fit: cover;
+    width: 100%;
+    height:100vh;
+   position:absolute;
+   top:75px;
+    left:0;
+  filter: blur(3px);
+    opacity:.25;
+}
+
+.fullscreen-bg {
+    
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.banner-link {
+    color:orange;
+    text-decoration: none;
+}
+
+.banner-link:hover {
+    color:white;
+    text-decoration: underline orange;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge add Firefox */
+  
+  .scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none; /* Firefox */
+  }
+
+  /** custom text slider */
+
+  /** Slideshow container */
+
+.slideshow-cont {
+   padding-top:10px;
+    position: relative;
+    background: #f1f1f1f1;
+    padding-bottom:20px;
+  }
+
+  .key-facts {
+      color:gray;
+      font-size:18px;
+      text-align:center;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Next & previous buttons */
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 6px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+
+  .dot-container {
+    text-align: center;
+    padding: 5px;
+   
+  }
+  
+  /* The dots/bullets/indicators */
+
+  .dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+
+  .act, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {font-style: italic;}
+  
+  /* Add a blue color to the author */
+  .author {color: cornflowerblue;}
+
+  .twitter-cont{
+      max-height:60vh;
+      overflow-y: auto;
+  }

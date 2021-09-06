@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>QXIP BV</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Font CSS -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Load Tempalte CSS -->
+    <link rel="stylesheet" href="assets/css/qxip.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/cookieAlert.css">
+    <script type="module" src="assets/js/cookiesalert.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand h1" href="index.html">
+
+                <span class="text-dark h4"><img src="assets/img/qxip-logo-new.png" height="40px"></span> <span
+                    class="h5" style="color:#a4a4a4;"></span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+                id="navbar-toggler-success">
+                <div class="flex-fill mx-xl-5 mb-2">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" target="_blank"
+                                href="http://sipcapture.org/#home">Open-Source</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" target="_blank"
+                                href="https://hepic.tel/">Commercial</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="work.html">Use Cases</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="getstarted.html">Get
+                                Started</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Close Header -->
+
+
+    <!-- Start Banner Hero -->
+    <div class="banner-wrapper bg-light cover-wrapper">
+        <div id="index_banner" class="banner-vertical-center-index container-fluid pt-5 cover anim-cover">
+            <video loop muted autoplay poster="assets/img/black-phone.jpg" class="cover">
+                <source src="assets/video/video-bg.webm" type="video/webm">
+                <source src="assets/video/video-bg.mp4" type="video/mp4">
+            </video>
+            <!-- Start slider -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                        <div class="row d-flex align-items-center text-center">
+                            <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left  pb-5">
+                                <h1
+                                    class="banner-heading text-white text-center display-3 mb-0 pb-5 mx-0 px-0 typo-space-line-center">
+                                    Voice Capture <br />Engineering<br /> & Development
+                                </h1>
+                                <p class="banner-body py-3 text-white fs-5 text-center">
+                                    With 15+ years of Telecom / Voice OSS and Design Experience,
+                                    <img src="assets/img/qxip-logo-new.png" height="32px" alt=""> is the Customer<br />
+                                    choice when it comes
+                                    to real-time VoIP
+                                    and RTC visibility, open troubleshooting tools,<br /> BI/analytics
+                                    and alerting emitters, with a set of proven interoperable,
+                                    flexible and<br /> operational cost-killer and time-to-repair
+                                    accelerating tools for all engineering tiers.
+                                </p>
+                                <a class="banner-button btn rounded-pill btn-outline-primary btn-lg px-4 text-center"
+                                    href="getstarted.html" role="button">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+
+                        <div class="py-5 row d-flex align-items-center text-center">
+                            <div class="banner-content text-center col-lg-5 col-5 m-lg-auto text-left pb-5">
+                                <h1
+                                    class="banner-heading text-white display-4 mb-0 pb-3 mx-0 px-0 typo-space-line-center">
+                                    Unique expertise and asistance for small and large customers
+                                </h1>
+                                <p class="banner-body py-5 text-white fs-5">
+                                    <img src="assets/img/qxip-logo-new.png" height="32px" alt=""> is able to provide
+                                    large and small
+                                    customers with
+                                    unique expertise and assistance with planning, design,
+                                    installation, customization and integration of its products
+                                    and has worked with some of the largest and most complex
+                                    operators and enterprises worldwide.
+                                </p>
+                                <a class="banner-button btn rounded-pill btn-outline-primary btn-lg px-4"
+                                    href="getstarted.html" role="button">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+
+                        <div class="py-5 row d-flex align-items-center text-center">
+                            <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
+                                <h1
+                                    class="banner-heading text-white display-4 mb-0 pb-3 mx-0 px-0 typo-space-line-center">
+                                    Open-Source and Commercial<br /> components adopted worldwide
+                                </h1>
+                                <p class="banner-body py-5 text-white fs-5">
+                                    <img src="assets/img/qxip-logo-new.png" height="32px" alt=""> is a go-to vendor for
+                                    VoIP/RTC Packet
+                                    Capture, Monitoring<br />
+                                    and Troubleshooting technologies, leveraging its unique design know-how<br /> and
+                                    widely adopted framework of
+                                    <a class="banner-link" href="http://sipcapture.org" target="_blank">open-source</a>
+                                    and <a class="banner-link" href="https://hepic.tel" target="_blank">commercial</a>
+                                    components.
+                                </p>
+                                <div class="d-flex justify-content-center">
+                                    <a class="banner-button btn rounded-pill btn-outline-primary btn-md px-4 mx-4"
+                                        target="_blank" href="http://sipcapture.org" role="button">Check Open-Source
+                                        Solution</a>
+                                    <a class="banner-button btn rounded-pill btn-outline-primary btn-md px-4 mx-4"
+                                        target="_blank" href="https://hepic.tel" role="button">Check Commercial
+                                        Solution</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="text-center">
+                                <figure class="figure">
+                                    <img class="figure-img img-fluid rounded" src="assets/img/homer_1.png" width="150px"
+                                        alt="">
+                                </figure>
+                            </div>
+
+                        </div>
+                        <div class="row d-flex align-items-center ">
+                            <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto py-3 pb-5 text-center">
+                                <p class="display-5 text-white">
+                                    A robust, carrier-grade and modular<br /> VoIP and RTC Capture Framework
+                                </p>
+                                <p class="banner-body text-white pb-5 fs-5">
+                                    <strong class="text-danger fs-3 fw-bold">homer</strong> is part of the
+                                    <a class="banner-link text-danger fw-bold" href="http://sipcapture.org"
+                                        target="_blank">SIPCAPTURE</a> stack,
+                                    developed for Analysis<br /> and Monitoring with native support for all major
+                                    OSS Voice platforms and vendor-agnostic Capture agents.
+                                </p>
+                                <a class="text-end banner-button btn rounded-pill btn-outline-primary btn-lg px-4"
+                                    href="http://sipcapture.org" target="_blank" role="button">More Information</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <!-- add here images slider in gif-->
+                        <div class="py-5 row d-flex align-items-center">
+                            <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
+                                <h1 class="banner-heading text-white display-3  mb-0 pb-3 mx-0 px-0 typo-space-line">
+                                    RTC Troubleshooting just got <strong class="fw-bold"><span
+                                            style="color:#1DC27C">h</span>epic.</strong>
+                                </h1>
+                                <div class="row">
+                                    <div class="col-7">
+                                        <p class="banner-body py-5 text-white fs-5">
+                                            <strong class="fs-3"><span style="color:#1DC27C">h</span>epic</strong> was
+                                            crafted for the modern Telco from the ground up to provide all the critical
+                                            features and shipping full of advanced features,
+                                            including Real-Time Session Tracking, RTP Analyzers, Cross-Protocol
+                                            Correlation,
+                                            Group Aggregations, Big-Data, Intelligent Alerting, Partitioning,
+                                            Clustering and much more. All fully compatible with our
+                                            existing Open-Source HEP Stack and Agents,delivering the best of both
+                                            worlds.
+                                        </p>
+                                    </div>
+                                    <div class="col-5 text-center">
+                                        <figure class="figure">
+                                            <img class="figure-img img-fluid rounded" src="assets/img/hepic-laptop.gif"
+                                                alt="">
+                                        </figure>
+                                        <a class="banner-button btn rounded-pill btn-outline-primary btn-lg px-4"
+                                            href="https://hepic.tel" target="_blank" role="button">More Information</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <a class="carousel-control-prev text-decoration-none" href="#carouselExampleIndicators" role="button"
+                    data-bs-slide="prev">
+                    <i class='bx bx-chevron-left'></i>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next text-decoration-none" href="#carouselExampleIndicators" role="button"
+                    data-bs-slide="next">
+                    <i class='bx bx-chevron-right'></i>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+            <!-- End slider -->
+
+        </div>
+    </div>
+    <!-- End Banner Hero -->
+
+    <!-- End Recent Work -->
+
+    </div>
+    </section>
+    <!-- QXIP About section-->
+    <section class="bg-default py-5">
+
+        <div class="container py-5 pb-3">
+            <div class="row">
+
+                <div class="col-6 text-center">
+                    <i class="bx bx-equalizer bx-lg display-1 text-muted rounded"></i>
+
+                    <h3 class="display-5 text-muted  text-center pb-3">
+                        Voice Capture<br /> Engineering<br /> & Development
+                    </h3>
+                </div>
+                <div class="col-6">
+                    <img width="150px" src="assets/img/qxip-logo-new.png" alt="">
+                    <p class="fs-4">
+                        Is the Customer choice when it comes to real-time VoIP and RTC
+                        visibility,
+                        open troubleshooting tools, BI/analytics and alerting emitters,
+                        with a set of proven interoperable, flexible and operational cost-killer
+                        and time-to-repair accelerating tools for all engineering tiers.
+                    </p>
+
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+        </div>
+        </div>
+        <div class="container-fluid pb-5">
+            <div class="col-12 py-5">
+                <!-- Slideshow container -->
+                <div class="slideshow-cont fs-4">
+                    <div class="key-facts">Key Facts:</div>
+                    <!-- Full-width slides/quotes -->
+                    <div class="mySlides">
+                        <q class="fs-5"><strong class="text-danger">qxip</strong> is an European company founded in 2014
+                            in the Netherlands</q>
+
+                    </div>
+
+                    <div class="mySlides">
+                        <q class="fs-5"> 25+ Years of experience in top tier Development and IP Telecom Space</q>
+
+                    </div>
+
+                    <div class="mySlides">
+                        <q class="fs-5">Experienced Senior Contributors to OSS Telecom Projects (Freeswitch, Kamailio,
+                            OpenSIPS, Wireshark, etc)</q>
+
+                    </div>
+
+                    <div class="mySlides">
+                        <q class="fs-5">Highly Specialized Software and Voice Engineers supporting Operations across EU,
+                            US,
+                            APAC</q>
+
+                    </div>
+                    <div class="mySlides">
+                        <q class="fs-5">1000s of Mission Critical Deployments and Billions of daily monitored minutes
+                            under
+                            our belt</q>
+
+                    </div>
+                    <!-- Next/prev buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <!-- Dots/bullets/indicators -->
+                <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Service -->
+
+    <!-- Start View Work -->
+<!--  Use Cases Section-->
+    <section class="bg-light py-5">
+        <div class="container py-5 pb-5">
+            <div class="row d-flex justify-content-center text-center pb-5">
+                <div class="col-lg-2 col-12 text-muted align-items-center rocket-wrapper">
+                    <i class='display-1 bx bxs-rocket bx-lg rocket anim-rocket'></i>
+                </div>
+                <div class="col-lg-7 col-12 pt-2 trainings-wrapper">
+                    <h3 class="display-5 training anim-training"><img src="assets/img/qxip-logo-new.png" height="50px" alt=""> use cases</h3>
+                    <p class="fs-4">We work with different use cases, ranging from small companies to some of the
+                        largest enterprises in the world. Below you can see some of our use cases anonymised...</p>
+                </div>
+                <div class="col-lg-3 col-12 pt-4">
+                    <a href="work.html"
+                        class="banner-button btn rounded-pill btn-outline-danger btn-lg px-4 text-center">View Use
+                        Cases</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 px-4">
+                    <figure class="figure">
+                        <a href="work.html" target="_blank">
+                            <img src="./assets/img/company-2.jpg" class="figure-img img-fluid rounded" alt="">
+                        </a>
+                    </figure>
+                    <h4 class="d-flex align-items-baseline">
+
+                        Large Enterprise
+                    </h4>
+
+                    <p class="py-2"> One of the largest and well-respected multinational technology companies,
+                        headquartered in
+                        California, USA, that designs ...</p>
+                    <a class="banner-button btn rounded-pill btn-outline-danger btn-md" href="/work.html"
+                        target="_blank" role="button">More Information</a>
+
+                </div>
+                <div class="col-4 px-4">
+                    <figure class="figure">
+                        <a href="work.html" target="_blank">
+                            <img src="./assets/img/server.jpg" class="figure-img img-fluid rounded" alt="">
+                        </a>
+                    </figure>
+                    <h4 class="d-flex align-items-baseline">
+
+                        Integrator
+                    </h4>
+
+                    <p class="py-2"> A global provider of enterprise cloud communications and collaboration software as
+                        a service
+                        (UCaaS) headquartered in the USA.</p>
+                    <a class="banner-button btn rounded-pill btn-outline-danger btn-md" href="/work.html"
+                        target="_blank" role="button">More Information</a>
+                </div>
+                <div class="col-4 px-4">
+                    <figure class="figure">
+                        <a href="work.html" target="_blank">
+                            <img src="./assets/img/carriers-2.jpg" class="figure-img img-fluid rounded" alt="">
+                        </a>
+                    </figure>
+                    <h4 class="d-flex align-items-baseline">
+
+                        Carrier
+                    </h4>
+                    <p class="py-2">
+                        Global provider of Trunking, Voice and Messaging services from the cloud for worldwide
+                        businesses presence including local, national, mobile ...
+
+                    </p>
+                    <a class="banner-button btn rounded-pill btn-outline-danger btn-md" href="/work.html"
+                        target="_blank" role="button">More Information</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Homer Section -->
+    <section class="bg-default py-5">
+        <div class="container py-5">
+            <div class="row text-center trainings-wrapper">
+                <h4 class="display-6 typo-space-line-center pb-5 training anim-training">
+                    Open-Source and Commercial<br /> components adopted worldwide
+                </h4>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <!-- homer / sipcapture-->
+                    <div class="text-center">
+                        <figure class="figure">
+                            <img class="figure-img img-fluid rounded" src="assets/img/homer_1.png" width="150px" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-6 py-3">
+                    <p>
+                        <span class="fs-5">
+                            <strong class="text-danger fs-2">homer</strong> is part of the <strong
+                                class="text-danger">SIPCAPTURE</strong> stack: A robust,
+                            carrier-grade and modular
+                            VoIP and RTC Capture Framework
+                            for Analysis and Monitoring</span> with native
+                        support for all major OSS Voice platforms and vendor-agnostic Capture
+                        agents.
+
+                        Counts thousands of deployments worldwide
+                        including notorious
+                        industry vendors, voice network operators and fortune 500 enterprises,
+                        providing advanced search, end-to-end analysis and packet drill-down
+                        capabilities for ITSPs, VoIP Providers and Trunk Suppliers using and
+                        relying on VoIP services and RTC technologies - All 100% Open-Source.
+                    </p>
+                    <div class="d-flex align-items-center justify-content-around py-2">
+
+                        <a class="banner-button btn rounded-pill btn-outline-danger btn-lg px-4 text-center"
+                            href="http://sipcapture.org" target="_blank" role="button">More Information</a>
+
+                    </div>
+
+                </div>
+                <div class="col-4">
+                    <figure class="figure">
+                        <img class="figure-img img-fluid rounded" src="assets/img/sipcapture1.gif" alt="">
+
+                    </figure>
+
+                </div>
+
+            </div>
+    </section>
+
+<!-- Hepic section -->
+    <section class="bg-dark py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-6 py-3">
+                    <!-- hepic / commertial-->
+                    <p class="text-white">
+                        <span class="fs-5">
+                            <strong class="fs-2"><span style="color:#1DC27C">h</span>epic</strong> was Crafted from the
+                            ground
+                            up to provide all the critical features for the modern Telco and shipping
+                            full of advanced features,
+                        </span><br />
+                        including Real-Time Session Tracking, RTP
+                        Analyzers, Cross-Protocol Correlation, Group Aggregations, Big-Data,
+                        Intelligent Alerting, Partitioning, Clustering and much more. All fully
+                        compatible with our existing Open-Source HEP Stack and Agents, delivering
+                        the best of both worlds.
+                    </p>
+                    <a class="banner-button btn rounded-pill btn-outline-primary btn-lg px-4 text-center"
+                        href="https://hepic.tel" target="_blank" role="button">More Information</a>
+                </div>
+                <div class="col-6">
+                    <figure class="figure">
+                        <img class="figure-img img-fluid rounded" src="assets/img/hepic-laptop.gif" alt="">
+                    </figure>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+<!-- twitter section-->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-7 text-center">
+                    <figure>
+                        <img src="assets/img/sipcapture_screen.gif" alt="">
+                    </figure>
+                    <p class="fs-3 text-muted py-3">
+                        Find all <strong class="text-danger fw-bold">SIPCAPTURE</strong> projects on GitHub
+                    </p>
+                    <ul class="list-inline footer-icons  py-3">
+                        <li class="list-inline-item m-0">
+                            <a class="text-dark" target="_blank" href="https://www.youtube.com/user/qxipvideo">
+                                <i class='bx bxl-youtube bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-dark" target="_blank" href="https://www.twitter.com/sipcapture">
+                                <i class='bx bxl-twitter bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-dark" target="_blank" href="https://www.linkedin.com/company/qxip">
+                                <i class='bx bxl-linkedin bx-md'></i>
+                            </a>
+                        </li>
+
+                        <li class="list-inline-item m-0">
+                            <a class="text-dark" target="_blank" href="https://www.github.com/sipcapture">
+                                <i class='bx bxl-github bx-md'></i>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <div class="col-5 twitter-cont">
+                    <a class="twitter-timeline" href="https://twitter.com/sipcapture?ref_src=twsrc%5Etfw">Tweets by
+                        @sipcapture</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="bg-secondary pt-4">
+        <div class="container">
+            <div class="row py-4">
+
+                <div class="col-lg-3 col-12 align-left">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/qxip-logo-white.png" width="150px" alt="">
+                    </a>
+                    <p class="text-light my-lg-4 mb-2">
+                        Hugo Floris Ruysstraat 1-5 <br />
+                        Amsterdam, 1063, <br />
+                        The Netherlands
+                    </p>
+                    <ul class="list-inline footer-icons  py-3">
+                        <li class="list-inline-item m-0">
+                            <a class="text-white" target="_blank" href="https://www.youtube.com/user/qxipvideo">
+                                <i class='bx bxl-youtube bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-white" target="_blank" href="https://www.twitter.com/sipcapture">
+                                <i class='bx bxl-twitter bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-white" target="_blank" href="https://www.linkedin.com/company/qxip">
+                                <i class='bx bxl-linkedin bx-md'></i>
+                            </a>
+                        </li>
+
+                        <li class="list-inline-item m-0">
+                            <a class="text-white" target="_blank" href="https://www.github.com/sipcapture">
+                                <i class='bx bxl-github bx-md'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h3 class="h4 pb-lg-3 text-light ">Our Company</h2>
+                        <ul class="list-unstyled text-light ">
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light" href="index.html">Home</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light py-1"
+                                    href="http://sipcapture.org/">Open-Source</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light py-1"
+                                    href="https://hepic.tel/">Commercial</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a
+                                    class="text-decoration-none text-light py-1" href="work.html">Use Cases</a>
+                            </li>
+
+                        </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light ">For Client</h2>
+                    <ul class="list-unstyled text-light ">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1">+31
+                                (0)20 8080468 </a>
+                        </li>
+
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1"
+                                href="mailto:sales@qxip.net">sales@qxip.net</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="getstarted.html">Get Started</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 bg-dark py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col mx-auto">
+                        <p class="text-lg-start text-center text-light ">
+                            © Copyright 2021 QXIP. All Rights Reserved. All trademarks are copyright of their respective
+                            owners.
+                            Amsterdam Chamber of Commerce #61018635
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+    <div class="alert text-center cookieAlert" role="alert">
+        <p>
+            Your personal data will be processed and information from your device
+            (cookies, unique identifiers and other device data) may be stored by,
+            accessed by and shared with third-party vendors, or used specifically by this site or app.
+        </p>
+        <p>
+            Some vendors may process your personal data on the basis of legitimate interest,
+            which you can object to by managing your options below. Look for a link at the
+            bottom of this page or in our privacy policy where you can withdraw consent.
+        </p>
+
+        <p>
+            <button type="button" class="btn btn-primary btn-sm acceptCookies">
+                I agree
+            </button>
+        </p>
+
+
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Load jQuery require for isotope -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.js"></script>
+    <!-- Page Script -->
+    <script>
+        $(window).load(function () {
+            // init Isotope
+            var $projects = $('.projects').isotope({
+                itemSelector: '.project',
+                layoutMode: 'fitRows'
+            });
+            $(".filter-btn").click(function () {
+                var data_filter = $(this).attr("data-filter");
+                $projects.isotope({
+                    filter: data_filter
+                });
+                $(".filter-btn").removeClass("active");
+                $(".filter-btn").removeClass("shadow");
+                $(this).addClass("active");
+                $(this).addClass("shadow");
+                return false;
+            });
+        });
+
+
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" act", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " act";
+        }
+    </script>
+    <!--  -->
+    <script src="assets/js/qxip.js"></script>
+    <!-- Custom -->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
